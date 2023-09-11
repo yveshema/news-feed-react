@@ -1,4 +1,48 @@
 .App {
-  font-family: sans-serif;
+  padding: 10px;
+}
+
+.App > h1 {
   text-align: center;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.story {
+  padding: 5px;
+  box-shadow: 0 1px 2px #aeaeae;
+}
+
+.story_header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.story_header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.story_header h1 > a {
+  text-decoration: none;
+}
+
+.story_creator {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.story_image {
+  max-width: 35%;
+}
+
+.story_image img {
+  width: 100%;
 }
