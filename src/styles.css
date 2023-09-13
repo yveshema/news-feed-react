@@ -1,5 +1,7 @@
 .App {
   padding: 10px;
+  max-width: 60%;
+  margin: auto;
 }
 
 .App > h1 {
@@ -40,7 +42,7 @@
 }
 
 .story_image {
-  max-width: 35%;
+  max-width: 20%;
 }
 
 .story_image img {
