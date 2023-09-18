@@ -49,8 +49,17 @@ function Story(props) {
   const description = desc_words.length > 50 ? 
                       desc_words.slice(0,50).join(' ') + ' ...' 
                       : props.description;
+
+  const handleDelete = (e) => {
+    const target = e.target;
+    if (target.tagName === 'SPAN' && target.textContent === 'x') {
+      e.currentTarget.remove();
+    }
+  };
+
   return (
-    <div className="story">
+    <div className="story" onClick={handleDelete}>
+      <span className="delete">x</span>
       <div className="story_header">
         <div className="story_image">
           <img src={props.image_url || img_placeholder} />
